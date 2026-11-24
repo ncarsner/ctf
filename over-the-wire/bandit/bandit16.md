@@ -1,0 +1,3 @@
+**Level goal:** The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000. First find out which of these ports have a server listening on them. Then find out which of those speak SSL/TLS and which don't. There is only 1 server that will give the next credentials, the others will simply send back to you whatever you send to it.
+
+**Exploit (16 -> 17):** Port scan and service fingerprinting. Scan ports with `nmap` to identify available ports in the range. Map with flags to identify services on open ports. Get the SSH key with current password. Copy private key to local machine, and change permissions from global. Failed login required key to be stripped of responses and headers.
