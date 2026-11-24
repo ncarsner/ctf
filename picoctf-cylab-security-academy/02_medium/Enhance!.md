@@ -1,5 +1,7 @@
 ### 1. download image file
-- drawing.flag.svg
+```bash
+wget drawing.flag.svg
+```
 
 ### 2. Run `grep` on image id with extended regex flag
 ```bash
